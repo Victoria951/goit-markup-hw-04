@@ -153,6 +153,17 @@ body{
 }
 
  /*---HERO---*/
+ .overlay{
+    min-width: 1440px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid #000000;
+    background-image: url('../images/people-office1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
  .hero{
     padding-top: 192px;
     padding-bottom:192px ;
