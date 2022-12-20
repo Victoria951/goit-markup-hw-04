@@ -153,16 +153,19 @@ body{
 }
 
  /*---HERO---*/
- .overlay{
+ .overlay {
     min-width: 1440px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
     outline: 1px solid #000000;
-    background-image: url('../images/people-office1.jpg');
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+     rgba(46, 47, 66, 0.7)),
+     url('../images/people-office1.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; 
  }
  .hero{
     padding-top: 192px;
@@ -179,7 +182,6 @@ body{
    font-size: 56px;
    line-height: 1.07;
   
-   background-color: var(--primary-light-color);
 }
 
  /*---BUTTON---*/
@@ -255,6 +257,29 @@ body{
     width: 264px;
    
 }
+.fueture-list .item::before{
+    display:block;
+    content: '';
+    height: 112px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--primary-cloud-color);
+
+}
+.icon-antenna::before{
+    background-image: url('../images/icons.svg/antenna.svg');
+}
+.icon-clock::before{
+    background-image: url('../images/icons.svg/clock.svg');
+}
+.icon-diagram::before{
+    background-image: url('../images/icons.svg/diagrama.svg');
+}
+.icon-astronaut::before{
+    background-image: url('../images/icons.svg/astronaut.svg');
+}
+
 
 .fueture-list .title, 
 .team-list .title{
