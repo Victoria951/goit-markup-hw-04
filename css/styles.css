@@ -250,7 +250,7 @@ body{
 
 .fueture-list{
     display: flex;
-
+    
 }
 .fueture-list .item{
     width: calc(25% - 24px);
@@ -258,16 +258,19 @@ body{
    
 }
  .fueture-icon{
-  margin-top: 24px;
-  margin-left: 100px;
+    display: flex;
  }
 
 
     
 
 .item-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 112px; 
     background-color: var(--primary-cloud-color); 
+    margin-bottom: 8px;
     
 }
 
@@ -373,6 +376,7 @@ body{
     width: 40px;
     height: 40px;
     background-color: var(--accent-color);
+    fill: var(--primary-cloud-color);
     
 
 }
@@ -383,6 +387,11 @@ body{
 
 .team-icon{
     margin: 12px;
+}
+.link-team-item:hover,
+.link-team-item:focus {
+ background-color: var(--primary-cloud-color); 
+ fill:var(--accent-color);
 }
 
 
@@ -437,7 +446,8 @@ body{
 border-color : var(--accent-color);
 }
 
-.client:hover .compani {
+.client:hover .compani,
+.client:focus .compani{
     color: var(--accent-color);
 }
 
@@ -513,7 +523,8 @@ border-color : var(--accent-color);
     
 } 
 
-.link-media-item:hover{
+.link-media-item:hover,
+.link-media-item:focus {
  background-color: var(--primary-green-color);
 }
 .cocial{
